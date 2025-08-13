@@ -565,6 +565,46 @@ span {
     background: #0ea5e9;
 }
 
+..contact-info-section {
+  padding: 5rem 2rem; /* same as Contact Me section */
+  background: var(--second-bg-color);
+  text-align: center;
+  color: var(--text-color);
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-info-section h2 {
+  font-size: 3rem; /* same as Contact Me heading */
+  margin-bottom: 2rem;
+}
+
+.contact-info-section .info-highlight {
+  color: var(--main-color);
+  text-shadow: 0 0 10px var(--main-color);
+}
+
+.contact-info-section p {
+  font-size: 1.6rem; /* match Contact Me text size */
+  margin: 1rem 0;
+}
+
+.contact-info-section i {
+  color: var(--main-color);
+  margin-right: 8px;
+  font-size: 1.6rem;
+}
+.contact-info-section {
+  min-height: 50vh; /* full height match */
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
 /* ===== Contact Section ===== */
 .contact {
     padding: 5rem 2rem;
@@ -653,39 +693,6 @@ span {
     transform: translateY(-2px);
 }
 
-.contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: flex-start;
-}
-
-.contact-info {
-    text-align: left;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    font-size: 1rem;
-    border-radius: 2%;
-    box-shadow: 0 10px 25px rgba(0, 255, 250, 0.150);
-}
-/* Color only the word "Info" */
-.info-accent {
-  color: var(--main-color);
-  text-shadow: 0 0 5px var(--main-color); /* optional glow; remove if you don't want it */
-}
-
-.contact-info i {
-    color: var(--main-color);
-    margin-right: 8px;
-    font-size: 1.3rem;
-}
-
-.contact-info p {
-    display:flex;
-    align-items: center;
-    margin: 7px 0;
-
-}
 
 /* this is used for the contact me color shadow*/
 .heading span {
