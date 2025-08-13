@@ -122,8 +122,10 @@ span {
     position: relative;
     top: 3rem;
     width: 22vw;
-    max-width: 200px; /* 👈 sets a maximum size */
-    height: auto;     /* keeps proportions */
+    max-width: 200px;
+    /* 👈 sets a maximum size */
+    height: auto;
+    /* keeps proportions */
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
@@ -562,6 +564,7 @@ span {
 .layer a:hover {
     background: #0ea5e9;
 }
+
 /* ===== Contact Section ===== */
 .contact {
     padding: 5rem 2rem;
@@ -593,7 +596,8 @@ span {
 .contact form .input-box {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem; /* Increased gap between inputs */
+    gap: 2rem;
+    /* Increased gap between inputs */
     justify-content: space-between;
     margin-bottom: 1.5rem;
 }
@@ -612,7 +616,8 @@ span {
     font-family: "Poppins", sans-serif;
     box-shadow: inset 0 0 6px rgba(4, 255, 251, 0.15);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 1.5rem; /* Extra gap between stacked fields */
+    margin-bottom: 1.5rem;
+    /* Extra gap between stacked fields */
 }
 
 /* Make textarea span full width */
@@ -621,6 +626,7 @@ span {
     resize: vertical;
     flex: 1 1 100%;
 }
+
 
 .contact form input:focus,
 .contact form textarea:focus {
@@ -647,31 +653,69 @@ span {
     transform: translateY(-2px);
 }
 
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.contact-info {
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border-radius: 2%;
+    box-shadow: 0 10px 25px rgba(0, 255, 250, 0.150);
+}
+/* Color only the word "Info" */
+.info-accent {
+  color: var(--main-color);
+  text-shadow: 0 0 5px var(--main-color); /* optional glow; remove if you don't want it */
+}
+
+.contact-info i {
+    color: var(--main-color);
+    margin-right: 8px;
+    font-size: 1.3rem;
+}
+
+.contact-info p {
+    display:flex;
+    align-items: center;
+    margin: 7px 0;
+
+}
+
+/* this is used for the contact me color shadow*/
+.heading span {
+  text-shadow: 0px 8px 25px var(--main-color);
+  color:var(--main-color); /* Optional: make sure text color contrasts for shadow */
+}
 
 
 /* Status message styles */
 #status {
-  margin-top: 10px;
-  padding: 10px;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 5px;
-  display: none; /* Hidden by default */
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    display: none;
+    /* Hidden by default */
 }
 
 #status.success {
-  background-color: #d4edda;
-  color: #155724;
-  display: block;
+    background-color: #d4edda;
+    color: #155724;
+    display: block;
 }
 
 #status.error {
-  background-color: #f8d7da;
-  color: #721c24;
-  display: block;
+    background-color: #f8d7da;
+    color: #721c24;
+    display: block;
 }
-
-
 
 
 
